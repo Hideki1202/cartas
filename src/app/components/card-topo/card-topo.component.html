@@ -1,0 +1,21 @@
+
+<div class="carta" [ngClass]="{'virado': isVirado}" >
+    <div class="frente">
+        <img [src]="imagem" alt="">
+
+    </div>
+    <div class="verso" [ngClass]="classe">
+        <div class="fase-top">
+            <h3 id="faseNum">fase {{numFase}}</h3>
+        </div>
+        <div class="conteudoback">
+            <div class="conteudo">
+             <h3>{{nome}}</h3>
+            <p *ngFor="let dica of dicas">{{dica}}</p>
+            </div>
+        </div>
+        
+       
+        
+    </div>
+</div>
