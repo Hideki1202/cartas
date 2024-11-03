@@ -425,86 +425,355 @@ fase2dicas  = [
 // ]
 
 
-
 fase3dicas = [
-  
-  
-    // {
-    //     "resposta": "Nelson Mandela",
-    //     "dicafase": [
-    //         "Dica 1 (Fácil): Fui o primeiro presidente negro da África do Sul.",
-    //         "Dica 2 (Médio): Passei 27 anos preso lutando contra o apartheid.",
-    //         "Dica 3 (Difícil): Recebi o Prêmio Nobel da Paz por minha luta contra a segregação racial."
-    //     ],
-    //     "fase": 3
-    // },
-    // {
-    //     "resposta": "Mozart",
-    //     "dicafase": [
-    //         "Dica 1 (Fácil): Fui um compositor clássico prodígio, reconhecido ainda em tenra idade.",
-    //         "Dica 2 (Médio): Minhas óperas famosas incluem 'Don Giovanni' e 'A Flauta Mágica'.",
-    //         "Dica 3 (Difícil): Nasci em Salzburgo, Áustria, no século XVIII e sou considerado um dos maiores compositores da história."
-    //     ],
-    //     "fase": 3
-    // },
-    // {
-    //     "resposta": "Frida Kahlo",
-    //     "dicafase": [
-    //         "Dica 1 (Fácil): Sou uma das mais famosas pintoras mexicanas.",
-    //         "Dica 2 (Médio): Minhas obras são conhecidas por seus autorretratos e temas de dor e sofrimento.",
-    //         "Dica 3 (Difícil): Minha arte foi fortemente influenciada pela cultura mexicana e por minhas dificuldades físicas."
-    //     ],
-    //     "fase": 3
-    // },
-    // {
-    //     "resposta": "Ludwig van Beethoven",
-    //     "dicafase": [
-    //         "Dica 1 (Fácil): Sou considerado um dos maiores compositores de todos os tempos.",
-    //         "Dica 2 (Médio): Minha 9ª Sinfonia é uma das mais famosas da música clássica.",
-    //         "Dica 3 (Difícil): Sofri de perda auditiva, mas continuei compondo algumas das maiores obras da história da música."
-    //     ],
-    //     "fase": 3
-    // }
-]
+  {
+    titulo: "Batalha de Ypres (primeiro uso de gás tóxico)",
+    dicas: [
+      "Ocorri em 22 de abril de 1915.",
+      "Sou conhecida como a primeira batalha com uso de gás tóxico.",
+      "Aconteci na Frente Ocidental, na Bélgica.",
+      "Soldados franceses e canadenses foram minhas principais vítimas.",
+      "Volte 2 casas.",
+      "Esse ataque marcou o início da guerra química.",
+      "O gás causou um efeito devastador nos soldados.",
+      "Sou um exemplo das inovações destrutivas da guerra.",
+      "Fui um choque para as nações aliadas.",
+      "Avance 2 casas."
+    ],
+    pergunta: "",
+    tipo: "UM ACONTECIMENTO",
+    fase: 3
+  },
+  {
+    titulo: "Batalha do Verdun",
+    dicas: [
+      "Comecei em 21 de fevereiro de 1916.",
+      "Sou uma das batalhas mais longas e sangrentas da guerra.",
+      "Volte 2 casas.",
+      "Avance 2 casas.",
+      "Meu confronto foi entre os exércitos francês e alemão.",
+      "Durou até dezembro de 1916.",
+      "Tive meio milhão de baixas entre ambos os lados.",
+      "Sou conhecida pelo grande sofrimento dos soldados.",
+      "Marquei um dos pontos altos da guerra de trincheiras.",
+      "Fui uma batalha de resistência e desgaste."
+    ],
+    pergunta: "",
+    tipo: "UM ACONTECIMENTO",
+    fase: 3
+  },
+  {
+    titulo: "Revolta Árabe",
+    dicas: [
+      "Fui uma revolta iniciada em 7 de junho de 1916.",
+      "Volte 2 casas.",
+      "Meus participantes queriam independência do domínio otomano.",
+      "Meu líder era Sharif Hussein da Arábia.",
+      "Sou parte das campanhas no Oriente Médio.",
+      "Avance 2 casas.",
+      "A revolta teve o apoio de Lawrence da Arábia.",
+      "Marquei uma resistência significativa ao controle otomano.",
+      "Inspirei outros movimentos de independência na região.",
+      "Mudei o equilíbrio de poder no Oriente Médio."
+    ],
+    pergunta: "",
+    tipo: "UM ACONTECIMENTO",
+    fase: 3
+  },
+  {
+    titulo: "Itália",
+    dicas: [
+      "Volte 2 casas.",
+      "Entrei na guerra ao lado dos Aliados em 23 de maio de 1915.",
+      "Buscava expandir meu território e influência na Europa.",
+      "Minha entrada foi uma mudança significativa para os Aliados.",
+      "Fui incentivado por promessas de ganho territorial.",
+      "Meu principal objetivo era obter terras da Áustria-Hungria.",
+      "Minhas forças enfrentaram desafios na Frente Italiana.",
+      "Minha entrada enfraqueceu os impérios centrais.",
+      "Avance 2 casas.",
+      "Busquei vantagens estratégicas contra o Império Austro-Húngaro."
+    ],
+    pergunta: "",
+    tipo: "UM PAÍS",
+    fase: 3
+  },
+  {
+    titulo: "Portugal",
+    dicas: [
+      "Sou um país europeu e declarei guerra ao Império Alemão em 16 de março de 1916.",
+      "Minha entrada na guerra trouxe novas tropas para o lado dos Aliados.",
+      "Avance 2 casas.",
+      "Estive em conflito com a Alemanha e seus aliados ao longo do Atlântico.",
+      "Tive colônias na África que também se envolveram no conflito.",
+      "Meu envolvimento foi visto como um apoio importante aos Aliados.",
+      "Minha economia e logística foram mobilizadas para o esforço de guerra.",
+      "Volte 2 casas.",
+      "Meu exército estava inicialmente focado em proteger territórios coloniais.",
+      "Enfrentei resistência interna por envolver-me na guerra."
+    ],
+    pergunta: "",
+    tipo: "UM PAÍS",
+    fase: 3
+  },
+  {
+    titulo: "Reino Unido",
+    dicas: [
+      "Sou um país da Europa Ocidental e tive um navio famoso afundado em 1915.",
+      "Esse evento trágico intensificou o apoio público à guerra em minha nação.",
+      "Volte 2 casas.",
+      "Meu navio era o Lusitânia, afundado por um submarino alemão.",
+      "Embora não tenha entrado na guerra imediatamente, esse evento foi um fator importante.",
+      "Avance 2 casas.",
+      "O ataque ao Lusitânia causou uma grande perda de civis, incluindo americanos.",
+      "A propaganda de guerra utilizou esse evento para aumentar o apoio à guerra.",
+      "A indignação pública foi forte e aumentou a pressão para entrar no conflito.",
+      "Sou conhecido por ter uma frota naval poderosa."
+    ],
+    pergunta: "",
+    tipo: "UM PAÍS",
+    fase: 3
+  },
+  {
+    titulo: "Estados Unidos",
+    dicas: [
+      "Sou uma nação fora da Europa e eventualmente entrei na guerra ao lado dos Aliados.",
+      "Meu envolvimento foi motivado em parte pelo ataque ao Lusitânia.",
+      "Tinha uma política inicial de neutralidade, mas o sentimento público mudou.",
+      "Meu ingresso na guerra trouxe tropas e recursos significativos.",
+      "Avance 2 casas.",
+      "As ações submarinas alemãs foram decisivas para a minha entrada.",
+      "Minha economia foi fortalecida pelo fornecimento de materiais de guerra antes de entrar no conflito.",
+      "Volte 2 casas.",
+      "A entrada na guerra marcou minha ascensão como potência global.",
+      "Participei da ofensiva final contra os Impérios Centrais."
+    ],
+    pergunta: "",
+    tipo: "UM PAÍS",
+    fase: 3
+  },
+  {
+    titulo: "Naufrágio do Lusitânia",
+    dicas: [
+      "Ocorri em 7 de maio de 1915.",
+      "Fui um ataque a um navio civil.",
+      "Fui torpedeada por um submarino alemão.",
+      "Minha destruição causou a morte de mais de mil civis.",
+      "Sou um dos eventos que provocaram a indignação pública.",
+      "Fui um catalisador para o envolvimento dos EUA na guerra.",
+      "Meu ataque foi altamente criticado internacionalmente.",
+      "Avance 2 casas.",
+      "Sou um símbolo dos perigos da guerra submarina.",
+      "Volte 2 casas."
+    ],
+    pergunta: "",
+    tipo: "UM ACONTECIMENTO",
+    fase: 3
+  },
+  {
+    titulo: "Genocídio Armênio",
+    dicas: [
+      "Aconteci em 24 de abril de 1915.",
+      "Avance 2 casas.",
+      "Fui um evento trágico e controverso envolvendo o povo armênio.",
+      "Fui promovido pelo Império Otomano durante a guerra.",
+      "Muitos países hoje me reconhecem como genocídio.",
+      "Centenas de milhares a milhões de armênios foram mortos ou deportados.",
+      "Sou considerado um dos primeiros genocídios do século XX.",
+      "Volte 2 casas.",
+      "Marquei uma profunda cicatriz na história armênia.",
+      "Sou lembrado em cerimônias e memoriais ao redor do mundo."
+    ],
+    pergunta: "",
+    tipo: "UM ACONTECIMENTO",
+    fase: 3
+  },
+  {
+    titulo: "Batalha do Somme",
+    dicas: [
+      "Aconteci em 1º de julho de 1916.",
+      "Volte 2 casas.",
+      "Sou uma das batalhas mais letais da Primeira Guerra Mundial.",
+      "Durou meses e resultou em mais de 1 milhão de baixas.",
+      "Fui uma ofensiva liderada pelos britânicos e franceses.",
+      "Marquei o uso inicial de tanques em combate.",
+      "O terreno enlameado e as trincheiras foram um desafio constante.",
+      "Sou conhecido por minha brutalidade e grande custo humano.",
+      "Os avanços territoriais foram limitados, apesar do esforço.",
+      "Simbolizo o desgaste e a devastação da guerra de trincheiras."
+    ],
+    pergunta: "",
+    tipo: "UM ACONTECIMENTO",
+    fase: 3
+  },
+  {
+    titulo: "Fronte Ocidental",
+    dicas: [
+      "Sou o teatro de guerra mais famoso da Primeira Guerra Mundial.",
+      "Avance 1 casa.",
+      "Minha extensão vai da França à Bélgica, cobrindo diversas batalhas significativas.",
+      "Fui cenário de intensas lutas, incluindo Verdun e Somme.",
+      "Volte 1 casa.",
+      "Minha guerra de trincheiras resultou em um impasse duradouro.",
+      "Sou conhecido pela devastação e pelo sofrimento de milhões de soldados.",
+      "Avance 2 casas.",
+      "Meu terreno foi marcado por batalhas sangrentas e perda de vidas humanas.",
+      "Fui um símbolo do conflito, representando a resistência e o desgaste."
+    ],
+    pergunta: "",
+    tipo: "UM ACONTECIMENTO",
+    fase: 3
+  }
+];
 
-fase4dicas = [
-    {
-        "resposta": "Wright Brothers",
-        "dicafase": [
-            "Dica 1 (Fácil): Somos conhecidos por inventar e construir o primeiro avião.",
-            "Dica 2 (Médio): Realizamos o primeiro voo controlado e sustentado em 1903.",
-            "Dica 3 (Difícil): Nascemos nos Estados Unidos e revolucionamos o transporte aéreo."
-        ],
-        "fase": 4
-    },
-    {
-        "resposta": "Thomas Edison",
-        "dicafase": [
-            "Dica 1 (Fácil): Sou famoso por ter inventado a lâmpada incandescente.",
-            "Dica 2 (Médio): Tenho mais de mil patentes registradas no meu nome.",
-            "Dica 3 (Difícil): Sou americano e minhas invenções incluem o fonógrafo e a câmera cinematográfica."
-        ],
-        "fase": 4
-    },
-    {
-        "resposta": "Martin Luther King Jr.",
-        "dicafase": [
-            "Dica 1 (Fácil): Sou um líder dos direitos civis nos Estados Unidos.",
-            "Dica 2 (Médio): Fiquei famoso pelo meu discurso 'Eu Tenho Um Sonho'.",
-            "Dica 3 (Difícil): Recebi o Prêmio Nobel da Paz por minha luta contra a segregação racial e o racismo."
-        ],
-        "fase": 4
-    },
-    {
-        "resposta": "Walt Disney",
-        "dicafase": [
-            "Dica 1 (Fácil): Sou conhecido por criar um dos personagens mais icônicos do mundo: o Mickey Mouse.",
-            "Dica 2 (Médio): Fundador de uma das maiores empresas de entretenimento do mundo, criei também o conceito de parques temáticos.",
-            "Dica 3 (Difícil): Fui um pioneiro em animação e produzi o primeiro longa-metragem de animação, 'Branca de Neve e os Sete Anões'."
-        ],
-        "fase": 4
-    }
-]
+
+fase4dicas =  [
+  {
+    titulo: "Vladimir Lênin",
+    dicas: [
+      "Fui o líder da Revolução de Outubro na Rússia.",
+      "Criei o governo bolchevique em 1917.",
+      "Volte 2 casas.",
+      "Minhas ideias eram baseadas no marxismo.",
+      "Prometi 'Paz, Terra e Pão' ao povo russo.",
+      "Conduzi a criação do primeiro estado socialista do mundo.",
+      "Assinei o Tratado de Brest-Litovsk, retirando a Rússia da guerra.",
+      "Minha liderança inspirou outros movimentos revolucionários.",
+      "Avance 3 casas.",
+      "Sou lembrado como um líder revolucionário mundialmente."
+    ],
+    pergunta: "",
+    tipo: "UMA PESSOA",
+    fase: 4
+  },
+  {
+    titulo: "Rasputin",
+    dicas: [
+      "Fui um místico russo com forte influência sobre a família Romanov.",
+      "Me chamavam de 'O Monge Louco.'",
+      "Volte 2 casas.",
+      "Meu relacionamento com a czarina Alexandra gerou desconfiança pública.",
+      "Meus conselhos e influência foram controversos.",
+      "Fui assassinado por nobres russos em 1916.",
+      "Acreditei ter poderes de cura, especialmente para o filho do czar.",
+      "Avance 1 casa.",
+      "Minha influência contribuiu para a queda da monarquia.",
+      "Minha vida é tema de muitas histórias e mitos."
+    ],
+    pergunta: "",
+    tipo: "UMA PESSOA",
+    fase: 4
+  },
+  {
+    titulo: "Arthur Balfour",
+    dicas: [
+      "Fui o secretário britânico de Assuntos Estrangeiros em 1917.",
+      "Emiti uma declaração prometendo um lar nacional para os judeus na Palestina.",
+      "Volte 2 casas.",
+      "Meu nome está associado à Declaração de Balfour.",
+      "Minha promessa teve implicações duradouras para o Oriente Médio.",
+      "Promovi a causa sionista enquanto diplomata.",
+      "Sou lembrado por essa política de apoio ao sionismo.",
+      "A declaração teve apoio, mas também oposição em meu país.",
+      "Avance 2 casas.",
+      "Minha declaração foi controversa e gerou conflito."
+    ],
+    pergunta: "",
+    tipo: "UMA PESSOA",
+    fase: 4
+  },
+  {
+    titulo: "Batalha de Passchendaele",
+    dicas: [
+      "Conhecida como a Terceira Batalha de Ypres.",
+      "Ocorrida de julho a novembro de 1917.",
+      "Foi marcada por condições de lama e chuva intensa.",
+      "Aliados buscavam romper a linha alemã na Bélgica.",
+      "Avance 1 casa.",
+      "O solo lamacento dificultou a movimentação.",
+      "Volte 2 casas.",
+      "Foi uma batalha desgastante e custosa.",
+      "Contribuiu para o desgaste das forças alemãs.",
+      "É um símbolo da brutalidade da guerra de trincheiras."
+    ],
+    pergunta: "",
+    tipo: "UM ACONTECIMENTO",
+    fase: 4
+  },
+  {
+    titulo: "Batalha de Cambrai",
+    dicas: [
+      "Fui um marco no uso dos tanques em combate.",
+      "Ocorrida em novembro de 1917.",
+      "Os britânicos atacaram as forças alemãs em Cambrai.",
+      "Marquei o início da guerra mecanizada.",
+      "Volte 1 casa.",
+      "Consegui um avanço inicial rápido.",
+      "Tive reviravoltas, com os alemães recuperando território.",
+      "Avance 2 casas.",
+      "Fui importante para o aprendizado militar dos Aliados.",
+      "Meu uso de tanques foi inovador para a época."
+    ],
+    pergunta: "",
+    tipo: "UM ACONTECIMENTO",
+    fase: 4
+  },
+  {
+    titulo: "Rio Marne",
+    dicas: [
+      "Fui uma linha de combate crucial na Primeira Guerra Mundial.",
+      "Minha localização é na França, perto de Paris.",
+      "Avance 2 casas.",
+      "Sou famoso por duas batalhas decisivas durante a guerra.",
+      "Minha segunda batalha em 1918 marcou o início do recuo alemão.",
+      "Minha posição estratégica ajudou a proteger Paris.",
+      "Volte 1 casa.",
+      "Meus arredores foram devastados pela guerra de trincheiras.",
+      "Contribuí para o desfecho final da guerra na Frente Ocidental.",
+      "A Primeira Batalha do Marne ocorreu em 1914 e foi uma vitória dos Aliados."
+    ],
+    pergunta: "",
+    tipo: "UM ACONTECIMENTO",
+    fase: 4
+  },
+  {
+    titulo: "Palestina",
+    dicas: [
+      "Fui prometida como 'lar nacional' para os judeus pela Declaração de Balfour.",
+      "Minha localização é no Oriente Médio.",
+      "Volte 2 casas.",
+      "Fiz parte do Império Otomano até a Primeira Guerra Mundial.",
+      "Avance 3 casas.",
+      "Meu futuro foi disputado entre potências europeias.",
+      "Após a guerra, fui colocada sob mandato britânico.",
+      "Meu destino influenciou a política no Oriente Médio.",
+      "Fui um marco nas negociações de paz e geopolítica.",
+      "Minha promessa como lar gerou conflitos futuros."
+    ],
+    pergunta: "",
+    tipo: "UM PAÍS",
+    fase: 4
+  },
+  {
+    titulo: "Mar do Norte",
+    dicas: [
+      "Fui um campo de batalhas navais durante a Primeira Guerra Mundial.",
+      "Volte 1 casa.",
+      "Minha localização está entre o Reino Unido e a Europa Continental.",
+      "Sou conhecido pela Batalha da Jutlândia em 1916.",
+      "As forças britânicas e alemãs competiam pelo meu domínio.",
+      "Fui essencial para o controle das rotas de suprimento marítimas.",
+      "Meu controle influenciou o abastecimento dos Aliados.",
+      "Avance 2 casas.",
+      "Fui cenário de uma das maiores batalhas navais da história.",
+      "Minha importância estratégica levou a bloqueios e confrontos."
+    ],
+    pergunta: "",
+    tipo: "UM ACONTECIMENTO",
+    fase: 4
+  }
+];
+
 fase1Embaralhada:any[] = []
 fase2Embaralhada:any[] = []
 fase3Embaralhada:any[] = []
@@ -512,22 +781,10 @@ fase4Embaralhada:any[] = []
 
 
 ngOnInit(){
-    for(let i = 0; i < this.fase1dicas.length;i++){
-      const num = this.randomInteger(0,this.fase1dicas.length)
-      this.fase1Embaralhada.push(this.fase1dicas[num])
-    }
-    for(let i = 0; i < this.fase2dicas.length;i++){
-      const num = this.randomInteger(0,this.fase2dicas.length)
-      this.fase2Embaralhada.push(this.fase2dicas[num])
-    }
-    for(let i = 0; i < this.fase3dicas.length;i++){
-      const num = this.randomInteger(0,this.fase3dicas.length)
-      this.fase3Embaralhada.push(this.fase3dicas[num])
-    }
-    for(let i = 0; i < this.fase4dicas.length;i++){
-      const num = this.randomInteger(0,this.fase4dicas.length)
-      this.fase4Embaralhada.push(this.fase4dicas[num])
-    }
+  this.fase1Embaralhada = this.embaralhar(this.fase1dicas);
+  this.fase2Embaralhada = this.embaralhar(this.fase2dicas);
+  this.fase3Embaralhada = this.embaralhar(this.fase3dicas);
+  this.fase4Embaralhada = this.embaralhar(this.fase4dicas);
 }
 
 
@@ -535,7 +792,9 @@ ngOnInit(){
     if (this.fase1Embaralhada.length === 0){
       this.atualizarSemDicas(1)
     }else{
-      await this.atualizarDica(this.fase1Embaralhada.shift());
+      const fase = this.fase1Embaralhada.shift()
+      await this.atualizarDica(fase);
+      this.fase1Embaralhada.push(fase)
       
       console.log(this.fase1dicas)   
     }    
@@ -545,7 +804,9 @@ ngOnInit(){
     if (this.fase2Embaralhada.length === 0){
       this.atualizarSemDicas(2)
     }else{
-      await this.atualizarDica(this.fase2Embaralhada.shift());
+      const fase = this.fase2Embaralhada.shift()
+      await this.atualizarDica(fase);
+      this.fase2Embaralhada.push(fase)
       console.log(this.fase2dicas)   
     }
   }
@@ -554,7 +815,9 @@ ngOnInit(){
     if (this.fase3Embaralhada.length === 0){
       this.atualizarSemDicas(3)
     }else{
-      await this.atualizarDica(this.fase3Embaralhada.shift());
+      const fase = this.fase3Embaralhada.shift()
+      await this.atualizarDica(fase);
+      this.fase3Embaralhada.push(fase)
       console.log(this.fase3dicas)   
     }
   }
@@ -654,6 +917,8 @@ ngOnInit(){
     this.dicas = ["Acabaram as cartas dessa fase!"]
     this.titulo = "Sem Cartas!"
     this.numFase = faseDica;
+    this.pergunta = "";
+    this.tipo = "";
     // Viramos novamente
     await this.virar(); // Aguarda a animação de virar
   }
@@ -676,6 +941,12 @@ ngOnInit(){
     return min + (array[0] % range);
   }
   
-
+  private embaralhar(array: any[]): any[] {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = this.randomInteger(0, i); // Gera um índice aleatório entre 0 e i
+        [array[i], array[j]] = [array[j], array[i]]; // Troca os elementos
+    }
+    return array;
+}
 
 }
