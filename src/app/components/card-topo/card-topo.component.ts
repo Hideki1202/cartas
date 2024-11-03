@@ -12,6 +12,9 @@ export class CardTopoComponent {
   @Input() numFase: number=0
   @Input() imagem: string= "";
   @Input() classe:string='classe1'
+  @Input() resposta: string= ''
+  @Input() pergunta: string = ''
+  @Input() tipo: string = ''
 
   virar() {
     this.isVirado = !this.isVirado; 

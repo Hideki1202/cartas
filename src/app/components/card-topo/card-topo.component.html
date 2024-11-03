@@ -4,13 +4,16 @@
         <img [src]="imagem" alt="">
 
     </div>
-    <div class="verso" [ngClass]="classe">
+    <div class="verso" [ngClass]="classe" >
         <div class="fase-top">
             <h3 id="faseNum">fase {{numFase}}</h3>
+            <h3 id="faseNum">{{nome}}</h3>
         </div>
         <div class="conteudoback">
             <div class="conteudo">
-             <h3>{{nome}}</h3>
+             <h3 *ngIf="pergunta !== ''">DIGA QUE SOU {{pergunta}}</h3>
+             <h3 *ngIf="pergunta === ''">DIGA QUE SOU {{tipo}}</h3>
+             <p>Dicas</p>
             <p *ngFor="let dica of dicas">{{dica}}</p>
             </div>
         </div>

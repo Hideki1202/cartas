@@ -1,9 +1,28 @@
 <div class="cartasflex">
-  <app-carta [imagem]="'assets/fase1Verso.png'" [fase]="'fase1'" [dicaFase]="fase1dicas" (click)="atribuirDicaFase1()"></app-carta>
-  <app-carta [imagem]="'assets/fase2Verso.png'"  [fase]="'fase2'" [dicaFase]="fase2dicas" (click)="atribuirDicaFase2()"></app-carta>
-  <app-carta [imagem]="'assets/fase3Verso.png'"  [fase]="'fase3'" [dicaFase]="fase3dicas" (click)="atribuirDicaFase3()"></app-carta>
-  <app-carta [imagem]="'assets/fase4Verso.png'"  [fase]="'fase4'" [dicaFase]="fase4dicas" (click)="atribuirDicaFase4()"></app-carta>
+  <div>
+    <div class="cartasflex">
+      <div class="flexcolumn">
+        <p>Cartas da fase 1:</p>
+        <app-carta [imagem]="'assets/fase1Verso.png'" [fase]="'fase1'" [dicaFase]="fase1dicas" (click)="atribuirDicaFase1()"></app-carta>
+      </div>
+      <div class="flexcolumn">
+        <p>Cartas da fase 2:</p>
+        <app-carta [imagem]="'assets/fase2Verso.png'"  [fase]="'fase2'" [dicaFase]="fase2dicas" (click)="atribuirDicaFase2()"></app-carta>
+      </div>
+    </div>
+    <div class="cartasflex">
+      <div class="flexcolumn">
+        <p>Cartas da fase 3:</p>
+        <app-carta [imagem]="'assets/fase3Verso.png'"  [fase]="'fase3'" [dicaFase]="fase3dicas" (click)="atribuirDicaFase3()"></app-carta>
+      </div>
+      <div class="flexcolumn">
+        <p>Cartas da fase 4:</p>
+        <app-carta [imagem]="'assets/fase4Verso.png'"  [fase]="'fase4'" [dicaFase]="fase4dicas" (click)="atribuirDicaFase4()"></app-carta>
+      </div>
+    </div>
+  </div>
+  <app-card-topo [isVirado]="isVirado" [nome]="titulo" [dicas]="dicas" [numFase]="numFase" [imagem]="imagemURL" [classe]="classe" [pergunta]="pergunta" [tipo]="tipo">
+  </app-card-topo>
 
 </div>
-<app-card-topo [isVirado]="isVirado" [nome]="titulo" [dicas]="dicas" [numFase]="numFase" [imagem]="imagemURL" [classe]="classe">
-</app-card-topo>
+

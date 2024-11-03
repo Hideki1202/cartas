@@ -10,7 +10,9 @@ import { Output } from '@angular/core';
 export class CartaComponent {
   @Input() fase:string = "fase 1"
   @Input() dicaFase= [{}]
+  @Input() pergunta = "pergunta"
   @Input() imagem:string = ""
+  @Input() resposta:string = ""
   teste(){
     console.log("aaaa")
   }
