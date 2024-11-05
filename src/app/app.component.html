@@ -1,28 +1,79 @@
-<div class="cartasflex">
-  <div>
-    <div class="cartasflex">
-      <div class="flexcolumn">
-        <p>Cartas da fase 1:</p>
-        <app-carta [imagem]="'assets/fase1Verso.png'" [fase]="'fase1'" [dicaFase]="fase1dicas" (click)="atribuirDicaFase1()"></app-carta>
+<div class="body">
+  <div class="cartasflexspace">
+    <div>
+      <div class="cartasflex" style="width: 350px;">
+        <div class="flexcolumn">
+          <h3>
+            Cartas da fase 1:
+          </h3>
+          <app-carta [imagem]="'assets/fase1Verso.png'" [fase]="'fase1'" [dicaFase]="fase1dicas" (click)="atribuirDicaFase1()"></app-carta>
+        </div>
+        <div class="flexcolumn">
+          <h3>
+            Cartas da fase 2:
+          </h3>
+          <app-carta [imagem]="'assets/fase2Verso.png'"  [fase]="'fase2'" [dicaFase]="fase2dicas" (click)="atribuirDicaFase2()"></app-carta>
+        </div>
       </div>
-      <div class="flexcolumn">
-        <p>Cartas da fase 2:</p>
-        <app-carta [imagem]="'assets/fase2Verso.png'"  [fase]="'fase2'" [dicaFase]="fase2dicas" (click)="atribuirDicaFase2()"></app-carta>
+      <div class="cartasflex"  style="width: 350px;">
+        <div class="flexcolumn">
+          <h3>
+            Cartas da fase 3:
+          </h3>
+          <app-carta [imagem]="'assets/fase3Verso.png'"  [fase]="'fase3'" [dicaFase]="fase3dicas" (click)="atribuirDicaFase3()"></app-carta>
+        </div>
+        <div class="flexcolumn">
+          <h3>
+            Cartas da fase 4:
+          </h3>
+          <app-carta [imagem]="'assets/fase4Verso.png'"  [fase]="'fase4'" [dicaFase]="fase4dicas" (click)="atribuirDicaFase4()"></app-carta>
+        </div>
       </div>
     </div>
-    <div class="cartasflex">
-      <div class="flexcolumn">
-        <p>Cartas da fase 3:</p>
-        <app-carta [imagem]="'assets/fase3Verso.png'"  [fase]="'fase3'" [dicaFase]="fase3dicas" (click)="atribuirDicaFase3()"></app-carta>
-      </div>
-      <div class="flexcolumn">
-        <p>Cartas da fase 4:</p>
-        <app-carta [imagem]="'assets/fase4Verso.png'"  [fase]="'fase4'" [dicaFase]="fase4dicas" (click)="atribuirDicaFase4()"></app-carta>
-      </div>
+    <app-card-topo [isVirado]="isVirado" [nome]="titulo" [dicas]="dicas" [numFase]="numFase" [imagem]="imagemURL" [classe]="classe" [pergunta]="pergunta" [tipo]="tipo">
+    </app-card-topo>
+  
+  
+  </div>
+  
+  <div>
+    <button  (click)="exibirRegras()">Ler as Regras</button>
+    <button (click)="exibirHistoria()">Ler a História</button>
+  </div>
+  
+  <div *ngIf="regrasExibicao"  class="modal-overlay">
+    <div  class="modal-content">
+      <button class="close-button" (click)="fecharModalRegras()">×</button>
+      <p>Regras:</p>
+      <h2>Como jogar A Rota da Grande Guerra?</h2>
+      <p>
+        O jogo A Rota da Grande Guerra funciona como uma espécie de dedução. O objetivo é descobrir, através de dicas, qual é o perfil secreto de cada carta, podendo ser uma batalha, pessoa, país, acontecimento ou uma questão de desenvolvimento socioeconômico. O diferencial é que todas as cartas são relacionadas à Primeira Guerra Mundial.
+      </p>
+      <p>Neste jogo de tabuleiro é possível identificar casas para andar. Cada jogador (podendo ser de 2 a 4) pode andar de 1 a 20 casas, tudo depende de quantas dicas ela precisará para acertar o perfil secreto da carta.</p>
+      <p>Uma rodada é iniciada quando um jogador vira uma carta e lê para os demais, mas primeiro só é revelada a categoria/pergunta no topo, depois cada um dos demais jogadores vai pedir uma dica, um de cada vez até que seja descoberto quem, onde ou o que é a carta lida. O jogador que acertar a resposta anda a quantidade de dicas que restaram, se errar, é eliminado da rodada. Cada rodada, um jogador vira a carta e lê para os outros, em ordem horária
+      </p>
+      <p>
+        Quanto menos dicas você utilizar para acertar, mais pontos irá ganhar. Você andará o número de dicas que restaram para ser lidas.
+      </p>
+      <p>Principais regras do jogo Perfil</p>
+      <p>As regras principais deste jogo de tabuleiro online são bem simples. É importante que seja determinada um jogador para iniciar. Isso porque cada participante responderá em ordem, até que um acerte.</p>
+      <p>Outro ponto a se destacar é que cada jogador deverá pedir apenas uma dica por volta, ou seja, em ordem horária, os jogadores vão pedir uma dica, exceto aquele que está lendo a carta. As rodadas seguem até que exista um vencedor. A pessoas que acertar andará o número de dicas que não foram lidas, podendo ser de 1 a 10 casas.</p>
     </div>
   </div>
-  <app-card-topo [isVirado]="isVirado" [nome]="titulo" [dicas]="dicas" [numFase]="numFase" [imagem]="imagemURL" [classe]="classe" [pergunta]="pergunta" [tipo]="tipo">
-  </app-card-topo>
-
+  <div *ngIf="historiaExibicao"  class="modal-overlay">
+    <div  class="modal-content2">
+      <button class="close-button" (click)="fecharModalHistoria()">×</button>
+      <h2>Backstory do Jogo</h2>
+      <p>A Europa e o mundo do início do século XX eram marcados por complexas alianças políticas e rivalidades imperialistas, construídas ao longo de séculos. Potências como o Reino Unido, Alemanha, França, Rússia e o Império Austro-Húngaro lutavam pela supremacia econômica e militar, enquanto várias regiões buscavam independência. No coração da Europa, o nacionalismo crescia, especialmente nos Balcãs, onde a Áustria-Hungria e o Império Otomano enfrentavam tensões étnicas e desejos de autodeterminação.</p>
+      <p>Em 28 de junho de 1914, o arquiduque Francisco Ferdinando da Áustria foi assassinado em Sarajevo por um nacionalista sérvio. Esse evento foi o estopim para a Primeira Guerra Mundial, com a Áustria-Hungria declarando guerra à Sérvia em 28 de julho de 1914. A escalada foi rápida: em 4 de agosto, tropas alemãs atravessaram a neutra Bélgica para invadir a França, levando o Reino Unido a declarar guerra à Alemanha. Logo, a Batalha de Fronteiras e outros confrontos evidenciavam o potencial destrutivo da guerra moderna, culminando na Primeira Batalha do Marne, onde os Aliados impediram a conquista de Paris.</p>
+      <p>No fim de 1914, o Império Otomano ingressou no conflito ao lado dos Impérios Centrais, bloqueando acessos vitais para a Rússia. Em 1915, a guerra tomou um tom ainda mais sombrio, com o uso de armas químicas pelos alemães em Ypres e o início dos massacres armênios na Turquia. Nesse mesmo ano, o naufrágio do navio britânico Lusitânia, atacado por um submarino alemão, gerou repercussões internacionais, enquanto a entrada da Itália ao lado dos Aliados ampliava o teatro de guerra.</p>
+      <p>A guerra em 1916 testemunhou duas das mais brutais batalhas: Verdun e Somme, onde a morte e a destruição massiva se tornaram realidade para milhões. Paralelamente, os acordos secretos entre britânicos e franceses redesenhavam o Oriente Médio. Esse ano também trouxe a revolta árabe, incentivada pela promessa britânica de independência contra o Império Otomano.</p>
+      <p>Em 1917, a Rússia foi abalada pela Revolução de Fevereiro, que derrubou a monarquia e começou a retirada russa da guerra. Esse evento deu fôlego à Alemanha, que também intensificou sua guerra submarina, levando os Estados Unidos a declarar guerra à Alemanha em 6 de abril. A entrada americana mudou a balança, fornecendo suporte essencial aos Aliados. Em dezembro, os britânicos tomaram Jerusalém, enquanto a Rússia assinava o Armistício de Brest-Litovsk com os Impérios Centrais.</p>
+      <p>Em 1918, o presidente americano Woodrow Wilson apresentou seus Quatorze Pontos, defendendo a autodeterminação dos povos. Naquele ano, a Alemanha lançou uma série de ofensivas, mas foi contida pela contraofensiva aliada em julho. O cenário mudou rapidamente, com a Alemanha recuando e os Aliados avançando em várias frentes. Ao mesmo tempo, a gripe espanhola varria o mundo, matando milhões. Em 11 de novembro de 1918, foi assinado o armistício que pôs fim à guerra. O Tratado de Versalhes, assinado em 1919, impôs condições severas à Alemanha, criando ressentimentos profundos que durariam décadas.</p>
+      <p>A paz, porém, foi frágil. Em 1922, Benito Mussolini chegou ao poder na Itália, marcando o início da ascensão das ideologias fascista e nazista, plantando as sementes para futuras convulsões no cenário europeu e mundial.</p>
+  
+  
+  
+    </div>
+  </div>
 </div>
-

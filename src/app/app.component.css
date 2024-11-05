@@ -1,7 +1,24 @@
+
 .cartasflex{
+
     display: flex;
     width: 100%;
     justify-content: space-between;
+}
+ @font-face {
+   font-family: 'army';
+   font-weight: normal;
+   font-style: normal;
+   src: url('/assets/vtks_army/vtks army.ttf') ;
+
+}
+
+.cartasflexspace{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
 }
 .flexcolumn{
     display: flex;
@@ -9,3 +26,82 @@
     width: 100%;
     justify-content: space-between;
 }
+/* Estilo para o fundo escuro do modal */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Certifique-se de que está acima de outros elementos */
+  }
+  
+  /* Estilo para o conteúdo do modal */
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    width: 100%;
+    position: relative;
+  }
+  .modal-content2 {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    max-width: 900px;
+    width: 100%;
+    position: relative;
+  }
+  
+  /* Botão de fechar */
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+  }
+  /* Estilo para os botões principais */
+button {
+    background-color: #007bff; /* Azul primário */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Azul mais escuro */
+  }
+  
+  /* Botão de fechar do modal */
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    color: #333;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .close-button:hover {
+    color: #007bff; /* Azul primário */
+  }
+  
