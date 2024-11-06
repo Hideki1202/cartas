@@ -52,16 +52,17 @@
  .verso{
     transform: rotateY(180deg);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-direction: column;
+    border-radius: 10px;
 
     padding: 10px;
  }
 
  .fase-top{
    padding-left: 3%;
-
    width: 100%;
+   border-radius: 10px 10px 0 0;
    h3{
       width: 50%;
       color: #D0D0D0;
@@ -103,6 +104,8 @@
  .conteudoback{
    height: 100%;
    width: 100%;
+   border-radius: 0 0 10px 10px ;
+
  }
  img{
    width: 100%;
@@ -120,6 +123,7 @@
       background-color: #7B1E1E;
     }
     .verso{
+
       background-color: #7B1E1E;
 
    }

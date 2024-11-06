@@ -3,13 +3,13 @@
     <div>
       <div class="cartasflex" style="width: 350px;">
         <div class="flexcolumn">
-          <h3>
+          <h3 class="titulocarta">
             Cartas da fase 1:
           </h3>
           <app-carta [imagem]="'assets/fase1Verso.png'" [fase]="'fase1'" [dicaFase]="fase1dicas" (click)="atribuirDicaFase1()"></app-carta>
         </div>
         <div class="flexcolumn">
-          <h3>
+          <h3 class="titulocarta">
             Cartas da fase 2:
           </h3>
           <app-carta [imagem]="'assets/fase2Verso.png'"  [fase]="'fase2'" [dicaFase]="fase2dicas" (click)="atribuirDicaFase2()"></app-carta>
@@ -17,13 +17,13 @@
       </div>
       <div class="cartasflex"  style="width: 350px;">
         <div class="flexcolumn">
-          <h3>
+          <h3 class="titulocarta">
             Cartas da fase 3:
           </h3>
           <app-carta [imagem]="'assets/fase3Verso.png'"  [fase]="'fase3'" [dicaFase]="fase3dicas" (click)="atribuirDicaFase3()"></app-carta>
         </div>
         <div class="flexcolumn">
-          <h3>
+          <h3 class="titulocarta">
             Cartas da fase 4:
           </h3>
           <app-carta [imagem]="'assets/fase4Verso.png'"  [fase]="'fase4'" [dicaFase]="fase4dicas" (click)="atribuirDicaFase4()"></app-carta>
@@ -39,6 +39,7 @@
   <div>
     <button  (click)="exibirRegras()">Ler as Regras</button>
     <button (click)="exibirHistoria()">Ler a História</button>
+    <button (click)="exibirResumo()">Ler a Resumo </button>
   </div>
   
   <div *ngIf="regrasExibicao"  class="modal-overlay">
@@ -48,6 +49,7 @@
       <h2>Como jogar A Rota da Grande Guerra?</h2>
       <p>
         O jogo A Rota da Grande Guerra funciona como uma espécie de dedução. O objetivo é descobrir, através de dicas, qual é o perfil secreto de cada carta, podendo ser uma batalha, pessoa, país, acontecimento ou uma questão de desenvolvimento socioeconômico. O diferencial é que todas as cartas são relacionadas à Primeira Guerra Mundial.
+        Você escolherá um dos 4 personagens antes de iniciar o jogo, cada um com uma história e um objetivo, aquele que chegar ao fina primeiro, atinge seu objetivo e ganha a guerra!
       </p>
       <p>Neste jogo de tabuleiro é possível identificar casas para andar. Cada jogador (podendo ser de 2 a 4) pode andar de 1 a 20 casas, tudo depende de quantas dicas ela precisará para acertar o perfil secreto da carta.</p>
       <p>Uma rodada é iniciada quando um jogador vira uma carta e lê para os demais, mas primeiro só é revelada a categoria/pergunta no topo, depois cada um dos demais jogadores vai pedir uma dica, um de cada vez até que seja descoberto quem, onde ou o que é a carta lida. O jogador que acertar a resposta anda a quantidade de dicas que restaram, se errar, é eliminado da rodada. Cada rodada, um jogador vira a carta e lê para os outros, em ordem horária
@@ -64,16 +66,41 @@
     <div  class="modal-content2">
       <button class="close-button" (click)="fecharModalHistoria()">×</button>
       <h2>Backstory do Jogo</h2>
-      <p>A Europa e o mundo do início do século XX eram marcados por complexas alianças políticas e rivalidades imperialistas, construídas ao longo de séculos. Potências como o Reino Unido, Alemanha, França, Rússia e o Império Austro-Húngaro lutavam pela supremacia econômica e militar, enquanto várias regiões buscavam independência. No coração da Europa, o nacionalismo crescia, especialmente nos Balcãs, onde a Áustria-Hungria e o Império Otomano enfrentavam tensões étnicas e desejos de autodeterminação.</p>
-      <p>Em 28 de junho de 1914, o arquiduque Francisco Ferdinando da Áustria foi assassinado em Sarajevo por um nacionalista sérvio. Esse evento foi o estopim para a Primeira Guerra Mundial, com a Áustria-Hungria declarando guerra à Sérvia em 28 de julho de 1914. A escalada foi rápida: em 4 de agosto, tropas alemãs atravessaram a neutra Bélgica para invadir a França, levando o Reino Unido a declarar guerra à Alemanha. Logo, a Batalha de Fronteiras e outros confrontos evidenciavam o potencial destrutivo da guerra moderna, culminando na Primeira Batalha do Marne, onde os Aliados impediram a conquista de Paris.</p>
-      <p>No fim de 1914, o Império Otomano ingressou no conflito ao lado dos Impérios Centrais, bloqueando acessos vitais para a Rússia. Em 1915, a guerra tomou um tom ainda mais sombrio, com o uso de armas químicas pelos alemães em Ypres e o início dos massacres armênios na Turquia. Nesse mesmo ano, o naufrágio do navio britânico Lusitânia, atacado por um submarino alemão, gerou repercussões internacionais, enquanto a entrada da Itália ao lado dos Aliados ampliava o teatro de guerra.</p>
-      <p>A guerra em 1916 testemunhou duas das mais brutais batalhas: Verdun e Somme, onde a morte e a destruição massiva se tornaram realidade para milhões. Paralelamente, os acordos secretos entre britânicos e franceses redesenhavam o Oriente Médio. Esse ano também trouxe a revolta árabe, incentivada pela promessa britânica de independência contra o Império Otomano.</p>
-      <p>Em 1917, a Rússia foi abalada pela Revolução de Fevereiro, que derrubou a monarquia e começou a retirada russa da guerra. Esse evento deu fôlego à Alemanha, que também intensificou sua guerra submarina, levando os Estados Unidos a declarar guerra à Alemanha em 6 de abril. A entrada americana mudou a balança, fornecendo suporte essencial aos Aliados. Em dezembro, os britânicos tomaram Jerusalém, enquanto a Rússia assinava o Armistício de Brest-Litovsk com os Impérios Centrais.</p>
-      <p>Em 1918, o presidente americano Woodrow Wilson apresentou seus Quatorze Pontos, defendendo a autodeterminação dos povos. Naquele ano, a Alemanha lançou uma série de ofensivas, mas foi contida pela contraofensiva aliada em julho. O cenário mudou rapidamente, com a Alemanha recuando e os Aliados avançando em várias frentes. Ao mesmo tempo, a gripe espanhola varria o mundo, matando milhões. Em 11 de novembro de 1918, foi assinado o armistício que pôs fim à guerra. O Tratado de Versalhes, assinado em 1919, impôs condições severas à Alemanha, criando ressentimentos profundos que durariam décadas.</p>
-      <p>A paz, porém, foi frágil. Em 1922, Benito Mussolini chegou ao poder na Itália, marcando o início da ascensão das ideologias fascista e nazista, plantando as sementes para futuras convulsões no cenário europeu e mundial.</p>
-  
-  
-  
+      <p>A história começa em um mundo que ainda respira os ecos de uma paz frágil. O início do século XX é marcado por potências europeias que jogam um perigoso jogo de poder, alianças e intrigas, alternando entre o brilho das grandes civilizações e o sangue derramado por causa de disputas territoriais e velhas rivalidades.</p>
+      <p>Na Europa, as grandes nações estão sentadas à mesa, cada uma com suas ambições e segredos. Entre elas, o Império Austro-Húngaro, uma colcha de retalhos de povos de diferentes etnias, e o Império Otomano, um colosso em declínio, lutam para manter o controle sobre vastas regiões em conflito, enquanto potências coloniais como o Reino Unido e a França se estendem por continentes distantes, absorvendo riquezas e gerando ressentimentos</p>
+      <p>No entanto, no centro dessas tensões, uma faísca. Em Sarajevo, um jovem nacionalista sérvio, Gavrilo Princip, com um punhal em punho, desencadeia um evento que mudará o destino de milhões. O assassinato do Arquiduque Francisco Ferdinando é o estopim de uma explosão que envolverá o mundo em uma guerra sem precedentes. O que começa como um ato de vingança, a luta por um sonho nacionalista, se transforma em um conflito global.</p>
+      <p>À medida que a guerra se espalha, você, o jogador, se vê em uma jornada de sombras e fumaça, batalhas épicas e alianças traiçoeiras. Você é um agente secreto, recrutado para uma missão crucial: alterar o curso da guerra e, quem sabe, até mesmo determinar o destino do mundo. Mas o seu caminho será tortuoso, e cada escolha que você fizer terá o peso de um império inteiro. Sua missão é desvelar os segredos mais obscuros da guerra, desde as batalhas na Frente Ocidental até as intrigas políticas nos bastidores.</p>
+      <p>Enquanto alianças se formam e se rompem, enquanto a guerra avança por trincheiras enlameadas e o uso de novas tecnologias, como o gás venenoso, leva o sofrimento a limites inimagináveis, você deve tomar decisões críticas. Pode ajudar os Aliados a alcançarem a vitória ou se tornar uma peça-chave para os Impérios Centrais, alterando o equilíbrio de poder. Em um mundo onde diplomacia e guerra se entrelaçam, sua missão é clara: descobrir os pontos frágeis, as traições e os segredos que os líderes preferem enterrar, garantindo que o futuro seja moldado pelo seu nome.</p>
+      <p>Você precisará de aliados, mas também de confiança, pois em tempos de guerra, a lealdade é a maior das mentiras. Quando o conflito estiver chegando ao fim, o Tratado de Versalhes será assinado. Será ele o acordo que selará a paz ou a centelha para uma nova guerra? Você tem o poder de mudar o curso da história. O futuro está em suas mãos.</p>
+      <p>*A Rota da Grande Guerra* não é apenas uma batalha física. É uma jornada de escolhas, mistérios e revelações. Quando a guerra estourar e as cartas forem jogadas, qual será o seu papel na grande história? Você será o herói que traz a paz ou o inimigo que traz a destruição?</p>
+      <p>Prepare-se. A história da Grande Guerra será contada a partir de agora, e o caminho para o futuro será moldado pelas decisões daqueles que têm coragem de jogar a última carta.</p>
+      
+    </div>
+  </div>
+  <div *ngIf="resumoExibicao"  class="modal-overlay">
+    <div  class="modal-content3">
+      <button class="close-button" (click)="fecharModalResumo()">×</button>
+      <h2>Resumo da Guerra</h2>
+      <p>A Primeira Guerra Mundial, também conhecida como Grande Guerra, teve início com o assassinato do arquiduque Francisco Ferdinando, herdeiro do trono da Áustria-Hungria, em 28 de junho de 1914, em Sarajevo. O ataque foi conduzido por Gavrilo Princip, um jovem nacionalista sérvio do grupo Mão Negra, que buscava unificar os territórios eslavos do sul. Este evento inflamou as tensões na Europa, e logo a Áustria-Hungria declarou guerra à Sérvia, desencadeando uma reação em cadeia devido ao complexo sistema de alianças. </p>
+
+      <p>As potências da Europa se dividiam em duas grandes alianças: a Tríplice Aliança (Alemanha, Áustria-Hungria e Itália, que mais tarde mudaria de lado) e a Tríplice Entente (França, Reino Unido e Rússia). O nacionalismo exacerbado, o imperialismo e as rivalidades coloniais impulsionavam uma corrida armamentista e intensificavam a frágil paz. Com a invasão alemã na neutra Bélgica, em agosto de 1914, o Reino Unido entrou na guerra, e a Alemanha seguiu com uma ofensiva esmagadora na Batalha das Fronteiras, pressionando a França e forçando-a a recuar. No entanto, na Primeira Batalha do Marne, em setembro, as forças franco-britânicas conseguiram impedir o avanço alemão sobre Paris, marcando uma importante virada.</p>
+
+      <p>O conflito rapidamente escalou para uma guerra de trincheiras na Frente Ocidental, uma linha de batalha entre a França e a Bélgica, que se estendia até o Mar do Norte. Na mesma época, o Império Otomano juntou-se às Potências Centrais, bloqueando o acesso aos estreitos do Bósforo e dos Dardanelos, isolando a Rússia. Em 1915, a Alemanha introduziu o uso de gás tóxico na batalha de Ypres, na Bélgica, enquanto o Império Otomano iniciava o genocídio armênio, resultando na morte de cerca de 1,5 milhão de armênios. </p>
+
+      <p>Outros eventos críticos incluem o afundamento do navio britânico RMS Lusitânia por um submarino alemão, que causou indignação global e preparou o terreno para a futura entrada dos Estados Unidos na guerra. A Itália, em busca de territórios da Áustria-Hungria, juntou-se aos Aliados em 1915, e a Batalha de Verdun, em 1916, foi uma das mais brutais, simbolizando a resistência e o sofrimento dos soldados. A Batalha do Somme, também em 1916, foi um dos confrontos mais mortíferos, com o uso inicial de tanques, refletindo o alto custo humano das batalhas de desgaste.</p>
+
+      <p>No Oriente Médio, a Revolta Árabe foi liderada por Sharif Hussein e apoiada por figuras como Lawrence da Arábia, buscando libertar-se do controle otomano. Em paralelo, os acordos secretos entre britânicos e franceses, como o Sykes-Picot, redesenharam as fronteiras do Oriente Médio, dividindo futuras áreas de influência. A instabilidade interna na Rússia culminou na Revolução de Fevereiro em 1917, com a abdicação do czar Nicolau II. O governo provisório que assumiu não conseguiu estabilizar o país, resultando na Revolução de Outubro liderada por Lênin e na assinatura do Tratado de Brest-Litovsk com as Potências Centrais, encerrando a participação russa na guerra.</p>
+
+      <p>A Alemanha intensificou sua guerra submarina irrestrita em 1917, mirando todos os navios que se aproximavam do Reino Unido, o que, junto com o Telegrama Zimmermann, levou os Estados Unidos a declararem guerra à Alemanha em 6 de abril de 1917. A entrada dos EUA trouxe uma nova força aos Aliados, tanto em recursos quanto em soldados, alterando o equilíbrio de poder. Em dezembro, as forças britânicas tomaram Jerusalém, marcando um avanço estratégico no Oriente Médio.</p>
+
+      <p>Em 1918, o presidente americano Woodrow Wilson apresentou seus Quatorze Pontos, que defendiam a autodeterminação e a criação de uma Liga das Nações para assegurar uma paz duradoura. As forças alemãs, no entanto, tentaram uma última grande ofensiva na Frente Ocidental em março, mas os Aliados, reforçados pelos americanos, resistiram e lançaram uma contraofensiva vitoriosa em julho. O Império Austro-Húngaro e o Império Otomano se desintegraram rapidamente, e a Alemanha, enfraquecida, recuou. </p>
+
+      <p>Finalmente, em 11 de novembro de 1918, o armistício foi assinado, encerrando formalmente a guerra. Em 1919, o Tratado de Versalhes impôs severas condições à Alemanha, responsabilizando-a pelo conflito e impondo sanções econômicas e perda de territórios. Este tratado foi altamente controverso e gerou ressentimentos que contribuiriam para a ascensão de ideologias extremistas e a Segunda Guerra Mundial. </p>
+
+      <p>A Primeira Guerra Mundial marcou uma época de mudanças devastadoras, e seus eventos moldaram profundamente o século XX.</p>  
+
+
+
     </div>
   </div>
 </div>

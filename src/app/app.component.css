@@ -26,21 +26,19 @@
     width: 100%;
     justify-content: space-between;
 }
-/* Estilo para o fundo escuro do modal */
 .modal-overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1000; /* Certifique-se de que está acima de outros elementos */
+    z-index: 1000; 
   }
   
-  /* Estilo para o conteúdo do modal */
   .modal-content {
     background-color: white;
     padding: 20px;
@@ -49,18 +47,34 @@
     max-width: 600px;
     width: 100%;
     position: relative;
+    overflow-y: auto;
+    max-height: 80vh; 
+
   }
   .modal-content2 {
     background-color: white;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    max-width: 900px;
+    max-width: 600px;
     width: 100%;
     position: relative;
+    overflow-y: auto;
+    max-height: 80vh; 
+
   }
-  
-  /* Botão de fechar */
+  .modal-content3 {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    width: 100%;
+    position: relative;
+    overflow-y: auto;
+    max-height: 80vh; 
+
+  }
   .close-button {
     position: absolute;
     top: 10px;
@@ -70,9 +84,8 @@
     font-size: 1.5em;
     cursor: pointer;
   }
-  /* Estilo para os botões principais */
 button {
-    background-color: #007bff; /* Azul primário */
+    background-color: #007bff; 
     color: white;
     border: none;
     padding: 10px 20px;
@@ -81,13 +94,22 @@ button {
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin: 10px;
+    height: 75px;
+    width: 150px;
   }
   
   button:hover {
-    background-color: #0056b3; /* Azul mais escuro */
+    background-color: #0056b3; 
   }
-  
-  /* Botão de fechar do modal */
+  .close-button:hover{
+    background-color: #0056b3; 
+    height: 50px;
+    width: 50px;
+  }
+  .close-button{
+    height: 50px;
+    width: 50px;
+  }
   .close-button {
     position: absolute;
     top: 10px;
@@ -102,6 +124,9 @@ button {
   }
   
   .close-button:hover {
-    color: #007bff; /* Azul primário */
+    color: #007bff;
+  }
+  .titulocarta{
+    color: white;
   }
   

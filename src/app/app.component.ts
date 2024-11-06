@@ -19,6 +19,7 @@ export class AppComponent {
   tipo: string = ''
   regrasExibicao: boolean = false;
   historiaExibicao: boolean = false;
+  resumoExibicao: boolean = false;
   
   exibirRegras(){
     this.regrasExibicao = !this.regrasExibicao
@@ -33,6 +34,13 @@ export class AppComponent {
   }
   exibirHistoria(){
     this.historiaExibicao = !this.historiaExibicao
+  }
+  fecharModalResumo(){
+    this.resumoExibicao = !this.resumoExibicao
+
+  }
+  exibirResumo(){
+    this.resumoExibicao= !this.resumoExibicao
   }
 
   fase1dicas = [
