@@ -66,7 +66,7 @@ export class AppComponent {
         fase: 1,
         titulo: "Gavrilo Princip",
         tipo: "UMA PESSOA",
-        pergunta: "um jovem nacionalista sérvio que assassinou o arquiduque Franz Ferdinand",
+        pergunta: "",
         dicas: [
             "1. Pertencia ao grupo nacionalista sérvio 'Mão Negra'.",
             "2. Nasceu em uma região dominada pela Áustria-Hungria, mas de etnia sérvia.",
@@ -118,8 +118,8 @@ export class AppComponent {
     },
     {
         fase: 1,
-        titulo: "Império Colonial Europeu",
-        tipo: "UM ACONTECIMENTO",
+        titulo: "Colonialismo Europeu",
+        tipo: "UMA IDEOLOGIA (ACONTECIMENTO)",
         pergunta: "",
         dicas: [
             "1. Domino terras em vários continentes.",
@@ -136,7 +136,7 @@ export class AppComponent {
     },
     {
         fase: 1,
-        titulo: "Rede de Alianças da Europa",
+        titulo: "Rede de Alianças da Europa (Alianças)",
         tipo: "UM ACONTECIMENTO",
         pergunta: "",
         dicas: [
@@ -155,7 +155,7 @@ export class AppComponent {
     {
         fase: 1,
         titulo: "Nacionalismo Europeu",
-        tipo: "UM ACONTECIMENTO",
+        tipo: "UMA IDEOLOGIA",
         pergunta: "",
         dicas: [
             "1. Reforço a identidade dos povos.",
@@ -267,7 +267,7 @@ fase2dicas  = [
   {
       fase: 2,
       titulo: "Batalha das Fronteiras",
-      tipo: "UM ACONTECIMENTO",
+      tipo: "UMA BATALHA",
       pergunta: "",
       dicas: [
           "1. Aconteci entre 19 e 24 de agosto de 1914.",
@@ -285,7 +285,7 @@ fase2dicas  = [
   {
       fase: 2,
       titulo: "Primeira Batalha do Marne",
-      tipo: "UM ACONTECIMENTO",
+      tipo: "UMA BATALHA",
       pergunta: "",
       dicas: [
           "1. Aconteci entre 6 e 9 de setembro de 1914.",
@@ -303,10 +303,10 @@ fase2dicas  = [
   {
       fase: 2,
       titulo: "Batalha da Corrida para o Mar",
-      tipo: "UM ACONTECIMENTO",
+      tipo: "UMA BATALHA",
       pergunta: "",
       dicas: [
-          "1. Aconteci de setembro a novembro de 1914.",
+          "1. Aconteci de setembro a novembro de 1914 (CAMPANHA STEMBRO/NOVEMBRO).",
           "2. Sou a campanha de manobras até o Mar do Norte.",
           "3. Avance 2 casas.",
           "4. O terreno se estabilizou em uma linha de trincheiras.",
@@ -321,7 +321,7 @@ fase2dicas  = [
   {
       fase: 2,
       titulo: "Batalha de Tannenberg",
-      tipo: "UM ACONTECIMENTO",
+      tipo: "UMA BATALHA",
       pergunta: "uma batalha que foi uma vitória decisiva para a Alemanha contra a Rússia em 1914",
       dicas: [
           "1. Aconteceu em agosto de 1914.",
@@ -334,24 +334,6 @@ fase2dicas  = [
           "8. A vitória consolidou Hindenburg como herói nacional alemão.",
           "9. A batalha ajudou a estabilizar a Frente Oriental temporariamente.",
           "10. Apesar da vitória, a Alemanha teve que redistribuir tropas para o oeste."
-      ]
-  },
-  {
-      fase: 2,
-      titulo: "Winston Churchill",
-      tipo: "UMA PESSOA",
-      pergunta: "",
-      dicas: [
-          "1. Teve um papel fundamental na criação do plano de Gallipoli.",
-          "2. Lideraria o Reino Unido na Segunda Guerra Mundial.",
-          "3. Nascido em 1874, ele vinha de uma família aristocrática britânica.",
-          "4. Conhecido por seu estilo oratório inspirador.",
-          "5. Sua carreira política foi marcada por altos e baixos.",
-          "6. Foi um defensor da modernização da marinha britânica.",
-          "7. Desempenhou um papel fundamental na aliança entre o Reino Unido, EUA e URSS.",
-          "8. Era conhecido por seu forte espírito imperialista.",
-          "9. Ele também foi jornalista e escritor.",
-          "10. Recebeu o Prêmio Nobel de Literatura em 1953."
       ]
   },
   {
@@ -429,7 +411,7 @@ fase3dicas  = [
       "10. Avance 2 casas."
     ],
     pergunta: "",
-    tipo: "UM ACONTECIMENTO",
+    tipo: "UMA BATALHA",
     fase: 3
   },
   {
@@ -447,7 +429,7 @@ fase3dicas  = [
       "10. Fui uma batalha de resistência e desgaste."
     ],
     pergunta: "",
-    tipo: "UM ACONTECIMENTO",
+    tipo: "UMA BATALHA",
     fase: 3
   },
   {
@@ -573,25 +555,25 @@ fase3dicas  = [
       "10. Simbolizo o desgaste e a devastação da guerra de trincheiras."
     ],
     pergunta: "",
-    tipo: "UM ACONTECIMENTO",
+    tipo: "UMA BATALHA",
     fase: 3
   },
   {
     titulo: "Fronte Ocidental",
     dicas: [
-      "1. Sou o teatro de guerra mais famoso da Primeira Guerra Mundial.",
-      "2. Avance 1 casa.",
+      "1. Sou o fronte de guerra mais famoso da Primeira Guerra Mundial.",
+      "2. Avance 3 casas.",
       "3. Minha extensão vai da França à Bélgica, cobrindo diversas batalhas significativas.",
       "4. Fui cenário de intensas lutas, incluindo Verdun e Somme.",
       "5. Volte 1 casa.",
       "6. Minha guerra de trincheiras resultou em um impasse duradouro.",
       "7. Sou conhecido pela dureza e brutalidade dos combates.",
-      "8. Tive um grande impacto na história militar e política da Europa.",
+      "8. Tive um grande impacto na história militar e política da Europa. Tenho até um filme.",
       "9. Fui marcado por inovações táticas e tecnológicas.",
       "10. Minha luta foi entre os Aliados e as Potências Centrais."
     ],
     pergunta: "",
-    tipo: "UM ACONTECIMENTO",
+    tipo: "UMA BATALHA/ACONTECIMENTO/LUGAR",
     fase: 3
   }
 ];
@@ -650,7 +632,7 @@ fase4dicas =  [
       "10. A Primeira Batalha do Marne ocorreu em 1914 e foi uma vitória dos Aliados."
     ],
     pergunta: "",
-    tipo: "UM ACONTECIMENTO",
+    tipo: "UM LUGAR",
     fase: 4
   },
   {
@@ -686,7 +668,7 @@ fase4dicas =  [
       "10. Sou conhecido por ter ampliado as tensões e mudado o curso do conflito."
     ],
     pergunta: "",
-    tipo: "UM ACONTECIMENTO",
+    tipo: "UM ACONTECIMENTO/BATALHAS",
     fase: 4
   },
   {
